@@ -1,11 +1,11 @@
 <?php
- 
+
 namespace App\Http\Controllers;
- 
+
 use Illuminate\Http\Request;
 use Kreait\Firebase;
 use Kreait\Firebase\Factory;
- 
+
 class FirebaseController extends Controller
 {
 
@@ -45,6 +45,16 @@ class FirebaseController extends Controller
     }
 
     public function index() {
-    return response()->json($this->database->getReference('PostData')->getValue());
+
+        $child = $this->database->getReference('PostData')->getChildKeys();
+        $counter = 1;
+        $data = [];
+        foreach ($child as $value) {
+            $data[$counter] = $this->database->getReference('PostData')->getChild($value)->getValue();
+            $counter++;
+        }
+        return view("welcome", ["post" => $data]);
+
+
     }
 }

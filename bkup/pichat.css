@@ -1,0 +1,94 @@
+body{
+    background:#f3f3f3;
+    color:#333;
+    width:100%;
+    font-family:sans-serif;
+    margin:0 auto;
+}
+
+h1.h2{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+    width:90%;
+    margin:auto;
+    height:120px;
+    line-height:120px;
+    background:#23c93e;
+    color:#fff;
+    text-align: center;
+}
+
+.subtitle{
+    width:90%;
+    margin:auto;
+    height:120px;
+    line-height:120px;
+    background:white;
+    color:#23c93e;
+    text-align: center;
+
+}
+
+.menu{
+    background-color:#31c924; 
+    height:50px; 
+    line-height:50px; 
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    padding:0 auto;
+}
+
+.jarak{
+    padding:0 2pc;
+}
+
+
+.content{
+    width:90%;
+    margin:auto;
+    height:420px;
+    padding:0px;
+    background:#fff;
+    color:#333;
+    text-align: center;
+}
+
+.border{
+    border:2px solid #4887b9;
+    margin-top:1pc;
+    padding-bottom:1pc;
+    padding-left:2pc;
+    padding-right:2pc;
+}
+
+.kiri{
+    width:70%;
+    float:center;
+    margin:auto;
+    background:#fff;
+    height:420px;
+}
+
+.kanan{
+    width:30%;
+    float:left;
+    margin:auto;
+    background:#fff;
+    height:420px;
+}
+
+
+.footer{
+    width:90%;
+    margin:auto;
+    height:40px;
+    line-height:40px;
+    background:#417aa8;
+    color:#fff;
+    margin-bottom: 1pc;
+}
+
+
